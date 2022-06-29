@@ -1,0 +1,28 @@
+
+
+.firstSection{
+    margin:0; 
+    padding:0;
+    background: rgba(153, 212, 242,0.5);
+}
+
+.secondarySection{
+    margin:0;
+    padding:0;
+}
+
+.thirdSection{
+    margin-top:20px;
+    padding:0;
+    background: rgba(208, 210, 247,0.7);
+}
+
+.buttonDiv{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.buttonElement{
+    margin: 10px;
+}

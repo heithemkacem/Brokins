@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+.inside {
+    height: 70vh;
+    background: white;
+    text-align: center;
+    color: #a102f2;
+}
+
+.headingText1 {
+    font-size: 2.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.division {
+    transform-style: preserve-3d;
+}
+
+#pic {
+    width: auto;
+    height: 500px;
+}
+
+.text {
+    opacity: 0.8;
+    animation: appear 1s ease-in forwards;
+    animation-delay: 1.8s;
+}
+
+.previewBox {
+    width: 250px;
+    height: auto;
+}
