@@ -4,10 +4,12 @@ import { CardContent, CardHeader } from '@mui/material'
 import axios from 'axios'
 import { getCurrentUserId } from '../auth/actions/userActions' 
 import {ButtonGroup, StyledFormButton   } from '../components/Styles'
+import Button from '@mui/material/Button';
 import  * as Yup from 'yup'
 import {Formik, Form} from 'formik'
 import { TextInput } from '../components/FormLib'
 import { FiLock} from 'react-icons/fi'
+import React from "react";
 const ECmodifierpwd = () => {
     const ResetSchema = Yup.object().shape({
         oldPwd: Yup.string().min(8, "Password is too short").max(26,"Password is too long").required("Required"),
@@ -54,28 +56,26 @@ const ECmodifierpwd = () => {
                             <TextInput
                                 name="oldPwd"
                                 type="password"
-                                label ="oldPwd"
-                                paceholder="oldPwd"
+                                label ="Ancien mot de passe"
+                                paceholder="Ancien mot de passe"
                                 icon={<FiLock />}
                             />
                             <TextInput
                                 name="newPwd"
                                 type="password"
-                                label ="newPwd"
-                                paceholder="newPwd"
+                                label ="Nouveau mot de passe"
+                                paceholder="nouveau mot de passe"
                                 icon={<FiLock />}
                             />
                             <TextInput
                                name="confirmPwd"
                                type="password"
-                               label ="confirmPwd"
-                               paceholder="confirmPwd"
+                               label ="Répéter le nouveau mot de passe"
+                               paceholder="nouveau mot de passe"
                                icon={<FiLock />}
                             />
                             <ButtonGroup>
-                                <StyledFormButton type="submit">
-                                Submit
-                                </StyledFormButton>
+                                <Button type="submit" sx={{height: 40, width: 140, background: "#a102f2" }} variant="contained">Validez</Button>
                             </ButtonGroup>
                         </Form>
                     )}

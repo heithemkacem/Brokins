@@ -38,7 +38,7 @@ export default function MesContratsEnCours() {
         getContract()
     })
     return (
-            <Card sx={{width:470 , height: 600 , maxWidth: 540 , overflowX: 'hidden' , overflowY:'scroll'}}>
+            <Card sx={{width:490 , height: 600 , maxWidth: 540 , overflowX: 'hidden' , overflowY:'scroll'}}>
                 <CardHeader title="Mes Devis En Cours" />
                 <CardContent sx={{margin:0 , padding:0 }}>
                     <div className="firstSection">
@@ -60,8 +60,8 @@ export default function MesContratsEnCours() {
                                 <p>Prime annuelle : <span><b>{contract.primeTtcAnnuelle}</b></span> - Echéance Annuelle :<span><b>Le {contract.dateEcheanceDevis}</b></span></p>
                                 </div>
                                 <div className="buttonDiv">
-                                    <Button  sx={{height: 50, width: 250, background: "#a102f2"}} variant="contained"> <a href={contract.link}> Télécharger le contrat</a> </Button>
-                                    <Button  className="buttonElement" component={Link} sx={{height: 50, width: 220, background: "#a102f2"}} to={`/MesDemandes`} variant="contained">Souscrivez ce contrat</Button>
+                                    <Button  sx={{height: 50, width: 250, background: "#a102f2"}} variant="contained"> <a className={"anchorTag buttonElement"} href={contract.link}>Télécharger le contrat</a> </Button>
+                                    <Button  className="buttonElement" component={Link} sx={{height: 50, width: 220, marginLeft:"20px" ,background: "#a102f2"}} to={`/comingSoon`} variant="contained">Souscrivez ce contrat</Button>
                                 </div>
                              
                                </>

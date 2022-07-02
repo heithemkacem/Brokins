@@ -36,23 +36,23 @@ export default function MesDonneesPerso() {
                             <TableBody>
                                 <TableRow>
                                     <TableCell align="left">ETAT CIVIL</TableCell>
-                                    <TableCell align="right"><Button component={Link} sx={{height: 40, width: 140, background: "#a102f2" }} to={`/ECMesDonnes/${getCurrentUserId()}`} variant="contained">visualisez</Button></TableCell>
+                                    <TableCell align="right"><Button className={"buttonElement"} component={Link} sx={{height: 40, width: 140, background: "#a102f2" }} to={`/ECMesDonnes/${getCurrentUserId()}`} variant="contained">visualisez</Button></TableCell>
                                 </TableRow>
                                 <TableRow>
                                     <TableCell align="left">ADRESSES</TableCell>
-                                    <TableCell align="right"><Button component={Link} sx={{height: 40, width: 140, background: "#a102f2"}} to={`/ECMesDonnes/${getCurrentUserId()}`} variant="contained">visualisez</Button></TableCell>
+                                    <TableCell align="right"><Button className={"buttonElement"} component={Link} sx={{height: 40, width: 140, background: "#a102f2"}} to={`/ECMesDonnes/${getCurrentUserId()}`} variant="contained">visualisez</Button></TableCell>
                                 </TableRow>
                                 <TableRow>
                                     <TableCell align="left">TELEPHONES</TableCell>
-                                    <TableCell align="right"><Button component={Link} sx={{height: 40, width: 140, background: "#a102f2"}} to={`/ECMesDonnes/${getCurrentUserId()}`} variant="contained">visualisez</Button></TableCell>
+                                    <TableCell align="right"><Button className={"buttonElement"} component={Link} sx={{height: 40, width: 140, background: "#a102f2"}} to={`/ECMesDonnes/${getCurrentUserId()}`} variant="contained">visualisez</Button></TableCell>
                                 </TableRow>
                                 <TableRow>
                                     <TableCell align="left">EMAILS</TableCell>
-                                    <TableCell align="right"><Button component={Link} sx={{height: 40, width: 140, background: "#a102f2"}} to={`/ECMesDonnes/${getCurrentUserId()}`} variant="contained">visualisez</Button></TableCell>
+                                    <TableCell align="right"><Button className={"buttonElement"} component={Link} sx={{height: 40, width: 140, background: "#a102f2"}} to={`/ECMesDonnes/${getCurrentUserId()}`} variant="contained">visualisez</Button></TableCell>
                                 </TableRow>
                                 <TableRow>
                                     <TableCell align="left">MOT DE PASSE</TableCell>
-                                    <TableCell align="right"><Button component={Link} sx={{height: 40, width: 140, background: "#a102f2"}} to={`/ECmodifierpwd/${getCurrentUserId()}`} variant="contained" >modifiez</Button></TableCell>
+                                    <TableCell align="right"><Button className={"buttonElement"} component={Link} sx={{height: 40, width: 140, background: "#a102f2"}} to={`/ECmodifierpwd/${getCurrentUserId()}`} variant="contained" >modifiez</Button></TableCell>
                                 </TableRow>
                             </TableBody>
                         </Table>

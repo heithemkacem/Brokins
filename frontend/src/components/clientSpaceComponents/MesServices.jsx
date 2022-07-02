@@ -38,23 +38,23 @@ export default function MesServices() {
                             <TableBody>
                                 <TableRow>
                                     <TableCell align="left">Contacts Assureurs(tél,adresse,..)</TableCell>
-                                    <TableCell align="right"><Button component={Link} sx={{height: 40, width: 140, background: "#a102f2"}} to="/ECContactassureurs" variant="contained">Contactez</Button></TableCell>
+                                    <TableCell align="right"><Button className={"buttonElement"} component={Link} sx={{height: 40, width: 140, background: "#a102f2"}} to="/ECContactassureurs" variant="contained">Contactez</Button></TableCell>
                                 </TableRow>
                                 <TableRow>
                                     <TableCell align="left">Attestation d'assurance</TableCell>
-                                    <TableCell align="right"><Button component={Link} sx={{height: 40, width: 140, background: "#a102f2"}} to="/" variant="contained">Telechargez</Button></TableCell>
+                                    <TableCell align="right"><Button className={"buttonElement"} component={Link} sx={{height: 40, width: 140, background: "#a102f2"}} to="/" variant="contained">Telechargez</Button></TableCell>
                                 </TableRow>
                                 <TableRow>
                                     <TableCell align="left">Résiliation(xxxx,)</TableCell>
-                                    <TableCell align="right"><Button component={Link} sx={{height: 40, width: 140, background: "#a102f2"}} to="/resiliationdevis" variant="contained">Résiliez</Button></TableCell>
+                                    <TableCell align="right"><Button className={"buttonElement"} component={Link} sx={{height: 40, width: 140, background: "#a102f2"}} to="/resiliationdevis" variant="contained">Résiliez</Button></TableCell>
                                 </TableRow>
                                 <TableRow>
                                     <TableCell align="left" >Réclamation(Problèmes,..)</TableCell>
-                                    <TableCell align="right"><Button component={Link} sx={{height: 40, width: 140, background: "#a102f2"}} to={`/ECreclamation/${getCurrentUserId()}`} variant="contained">Reclamez</Button></TableCell>
+                                    <TableCell align="right"><Button className={"buttonElement"} component={Link} sx={{height: 40, width: 140, background: "#a102f2"}} to={`/ECreclamation/${getCurrentUserId()}`} variant="contained">Reclamez</Button></TableCell>
                                 </TableRow>
                                 <TableRow>
                                     <TableCell align="left">Payer votre prime(Impayé..)</TableCell>
-                                    <TableCell align="right"><Button component={Link} sx={{height: 40, width: 140, background: "#a102f2"}} to="/" variant="contained">Payez</Button></TableCell>
+                                    <TableCell align="right"><Button className={"buttonElement"} component={Link} sx={{height: 40, width: 140, background: "#a102f2"}} to="/" variant="contained">Payez</Button></TableCell>
                                 </TableRow>
                             </TableBody>
                         </Table>

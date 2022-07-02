@@ -75,7 +75,8 @@ const AdressForm = () => {
                             name="adresse"
                             aria-describedby='emailHelp'
                             onChange={onInputChange}  
-                            placeholder={(data.adresse) ? data.adresse :'adresse' }      
+                            placeholder={(data.adresse) ? data.adresse :'adresse' }
+                            required={true}
                         />
                     </div>
                     <div className="form-group">
@@ -86,7 +87,8 @@ const AdressForm = () => {
                             name="complementAdresse"
                             aria-describedby='emailHelp'
                             onChange={onInputChange}  
-                            placeholder={(data.complementAdresse) ? data.complementAdresse :'complementAdresse' }                      
+                            placeholder={(data.complementAdresse) ? data.complementAdresse :'complementAdresse' }
+                            required={true}
                         />
                     </div>
                     <div className="form-group">
@@ -97,7 +99,8 @@ const AdressForm = () => {
                             name="code_postal"
                             aria-describedby='emailHelp'
                             onChange={onInputChange} 
-                            placeholder={(data.code_postal) ? data.code_postal :'postale' }              
+                            placeholder={(data.code_postal) ? data.code_postal :'postale' }
+                            required={true}
                         />
                     </div>
                     <div className="form-group">

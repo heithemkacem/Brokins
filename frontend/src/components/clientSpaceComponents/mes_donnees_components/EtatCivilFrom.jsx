@@ -80,7 +80,8 @@ const EtatCivilForm = () => {
                             aria-describedby='emailHelp'
                             value={state.civilite}
                             placeholder={(data.civilite) ? data.civilite :'civilite' }
-                            onChange={onInputChange}                
+                            onChange={onInputChange}
+                            required={true}
                         />
                     </div>
                     <div className="form-group">
@@ -93,6 +94,7 @@ const EtatCivilForm = () => {
                                 value={state.nom}
                                 onChange={onInputChange}
                                 placeholder={(data.nom) ? data.nom :'nom' }
+                                required={true}
                             />
                     </div>
                     <div className="form-group">
@@ -104,7 +106,8 @@ const EtatCivilForm = () => {
                                 aria-describedby='emailHelp'
                                 value={state.prenom}
                                 onChange={onInputChange}   
-                                placeholder={(data.prenom) ? data.prenom :'prenom' }             
+                                placeholder={(data.prenom) ? data.prenom :'prenom' }
+                                required={true}
                             />
                     </div>
                     <div className="form-group">

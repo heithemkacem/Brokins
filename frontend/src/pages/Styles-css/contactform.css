@@ -1,11 +1,10 @@
 
 .app-form-control {
     width: 100%;
-    padding: 10px 0;
+    padding: 10px;
     background: none;
-    border: none;
-    border-bottom: 1px solid #666;
-    color: #ddd;
+    border: 1px solid #666;
+    color: black;
     font-size: 14px;
     outline: none;
     transition: border-color .2s;

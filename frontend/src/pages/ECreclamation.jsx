@@ -17,6 +17,7 @@ const ECreclamation = () => {
     const [value,setValue] = useState()
     const [state,setState] = useState({
         subject:'',
+        email:'',
         message:''
     })
     const [result,setResult] = useState(null)
@@ -28,6 +29,7 @@ const ECreclamation = () => {
                 setResult(response.data)
                 setState({
                     subject:'',
+                    email:'',
                     message:''
                 })
             })
@@ -65,6 +67,16 @@ const ECreclamation = () => {
                         <p>Merci de remplir tous les champs afin que votre déclaration soit la plus complète et la plus claire possible. Une déclaration détaillée à plus de chance d'être traitée rapidement.N'hésitez pas à joindre un document.</p>
                     </div>
                     <div>
+                        <div className="form-group app-form-group">
+                            <input
+                                type="email"
+                                className='form-control app-form-control'
+                                name='email'
+                                placeholder="Entrez votre email"
+                                value={state.email}
+                                onChange={onInputChange}
+                            />
+                        </div>
                         <FormControl>
                             <FormLabel id="demo-row-radio-buttons-group-label">Objet: *</FormLabel>
                             <RadioGroup

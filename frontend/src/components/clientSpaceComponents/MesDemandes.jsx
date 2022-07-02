@@ -82,7 +82,7 @@ export default function MesDemandes() {
                             <p>Nombre :<span><b>{contractdata}</b></span></p>
                         </div>
                         <div className="buttonDiv">
-                            <Button  component={Link} sx={{height: 50, width: 250, background: "#a102f2"}} to={`/MesDemandes`} variant="contained">Voir mes contrats</Button>
+                            <Button  className={"buttonElement"} component={Link} sx={{height: 50, width: 250, background: "#a102f2"}} to={`/MesDemandes`} variant="contained">Voir mes contrats</Button>
                         </div>
                     </div>
                     <div className="secondarySection">
@@ -91,7 +91,7 @@ export default function MesDemandes() {
                             <p>Nombre :<span><b> {devisdata} </b></span> </p>
                         </div>
                         <div className="buttonDiv">
-                            <Button  component={Link} sx={{height: 50, width: 250, background: "#a102f2"}} to={`/MesDemandes`} variant="contained">Voir mes devis</Button>
+                            <Button  className="buttonElement" component={Link} sx={{height: 50, width: 250, background: "#a102f2"}} to={`/MesDemandes`} variant="contained">Voir mes devis</Button>
                         </div>
                     </div>
                     <div className="secondarySection">
@@ -100,7 +100,7 @@ export default function MesDemandes() {
                             <p>Nombre :<span><b> {comparatifdata}</b></span></p>
                         </div>
                         <div className="buttonDiv">
-                            <Button  component={Link} sx={{height: 50, width: 250, background: "#a102f2"}} to={`/MesDemandes`} variant="contained">Voir mes comparatifs</Button>
+                            <Button  className={"buttonElement"} component={Link} sx={{height: 50, width: 250, background: "#a102f2"}} to={`/MesDemandes`} variant="contained">Voir mes comparatifs</Button>
                         </div>
                     </div>
                 </CardContent>

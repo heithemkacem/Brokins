@@ -13,13 +13,14 @@ const sendReclamation = (req,res) => {
     try {
         const mailOptions = {
             from: req.body.email, // sender adress
-            to: 'botverifbrokins@outlook.com', // reciever adress
+            to: process.env.CLIENT_EMAIL, // reciever adress
             subject: "RECLAMATION:  " + req.body.subject, // sujet de reclamation 
             html:`
                 <p>Vous avez une nouvelle reclamation!</p>
                 <h3>Détails du Réclamation:</h3>
                 <ul>
                     <li>Objet: ${req.body.subject}</li>
+                    <li>Email: ${req.body.email}</li>
                     <li>Message de réclamation: ${req.body.message}</li>
                 </ul>
             `

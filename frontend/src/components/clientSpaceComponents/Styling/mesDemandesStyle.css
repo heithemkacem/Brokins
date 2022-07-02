@@ -25,4 +25,14 @@
 
 .buttonElement{
     margin: 10px;
+    color: white;
+}
+
+.buttonElement:hover{
+    color: white;
+}
+
+.anchorTag{
+    color: white;
+    text-decoration: none;
 }

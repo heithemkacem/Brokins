@@ -45,11 +45,10 @@ export const StyledSubtitle = styled.p`
     padding: 5px;
     margin-bottom: 25px;
 `
-// Logo/Avatar styled component 
+// Logo/Avatar styled component
 export const Avatar = styled.div`
     width:400px;
-    height:auto;
-    background-image: url(${props => props.image});
+    height:auto;  
     background-size: cover;
     background-position: center;
     margin: auto;
@@ -63,7 +62,7 @@ export const StyledButton = styled(Link)`
     border: 3px solid ${colors.dark1};
     border-radius:25px;
     color: ${colors.dark1};
-    text-decoration: none;
+    text-decoration: none;  
     text-align: center;
     transition: ease-in-out 0.3s;
     outline: 0;
@@ -101,8 +100,7 @@ export const StyledTextInput = styled.input`
     ${(props)=> props.invalid && `background-color: ${colors.red}; color:${colors.primary};`}
 
     &:focus {
-        background-color : ${colors.dark2};
-        color: ${colors.primary};
+        color: black;
     }
 `
 // Label Styled Component
