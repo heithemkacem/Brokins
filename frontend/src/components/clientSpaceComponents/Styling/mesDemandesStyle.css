@@ -36,3 +36,112 @@
     color: white;
     text-decoration: none;
 }
+
+
+
+
+#form {
+    background: #fff;
+    max-width: 500px;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 3px 3px 40px #545454e8;
+    position: relative;
+  }
+  
+  #form input,
+  #form select {
+    margin: 1rem 0;
+    padding: 0.75rem 0.25rem;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: relative;
+    width: 100%;
+  }
+  
+  #form h4 {
+    color:#555;
+    font-size: .90rem;
+  }
+  
+  .mt {
+    margin-top: 8rem;
+  }
+  
+  #form .input-container {
+    position: relative;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  #form .input-grp {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0.5rem;
+  }
+  
+  #form button {
+    width: 100%;
+    padding: 1rem 0.5rem;
+    margin-top: 1.5rem;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    background-color: #060a24;
+    color: #FFF;
+    letter-spacing: 1px;
+    font-size: 1.25rem;
+    cursor: pointer;
+    position: relative;
+    z-index: 9;
+  }
+  
+  #form button:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #3b2dd2fa;
+    z-index: -1;
+  }
+  
+  #form button:hover:before {
+    width: 100%;
+    transition: .2s all;
+  }
+  .FormGroup {
+    margin: 0 15px 20px;
+    padding: 0;
+    border-style: none;
+    background-color: #7795f8;
+    will-change: opacity, transform;
+    box-shadow: 0 6px 9px rgba(50, 50, 93, 0.06), 0 2px 5px rgba(0, 0, 0, 0.08), inset 0 1px 0 #829fff;
+    border-radius: 4px;
+  }
+  
+  .FormRow {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: 15px;
+    border-top: 1px solid #819efc;
+  }
+  
+  .StripeElement--webkit-autofill {
+    background: transparent !important;
+  }
+  
+  .StripeElement {
+    width: 100%;
+    padding: 11px 15px 11px 0;
+  }
+  
+  

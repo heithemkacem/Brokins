@@ -54,7 +54,7 @@ export default function MesServices() {
                                 </TableRow>
                                 <TableRow>
                                     <TableCell align="left">Payer votre prime(Impayé..)</TableCell>
-                                    <TableCell align="right"><Button className={"buttonElement"} component={Link} sx={{height: 40, width: 140, background: "#a102f2"}} to="/" variant="contained">Payez</Button></TableCell>
+                                    <TableCell align="right"><Button className={"buttonElement"} component={Link} sx={{height: 40, width: 140, background: "#a102f2"}} to="/payment" variant="contained">Payez</Button></TableCell>
                                 </TableRow>
                             </TableBody>
                         </Table>

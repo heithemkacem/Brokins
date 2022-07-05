@@ -30,6 +30,7 @@ import Navbar from './components/navbar/Navbar';
 import ComingSoon from './components/comingSoon/ComingSoon'
 import MesDemandesPage from './pages/MesDemandesPage';
 import UploadsComponents from './components/UploadsComponent';
+import PaymentFormulaire from './components/PaymentFormulaire';
 
 function App({checked}) {
     return (
@@ -77,6 +78,9 @@ function App({checked}) {
                 </Route>
                 <AuthRoute exact path="/ECreclamation/:id">
                   <ECreclamation/>
+                </AuthRoute>
+                <AuthRoute exact path="/payment">
+                  <PaymentFormulaire/>
                 </AuthRoute>
                 <AuthRoute exact path="/MesDemandes">
                   <MesDemandesPage/>

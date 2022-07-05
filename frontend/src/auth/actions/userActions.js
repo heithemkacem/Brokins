@@ -103,6 +103,7 @@ export const logoutUser = (history) => {
     return () => {
         sessionService.deleteSession()
         sessionService.deleteUser
+        localStorage.clear()
         history.push("/home")
     }
 }

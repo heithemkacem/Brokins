@@ -1,6 +1,8 @@
 const express = require('express')
 const path = require('path');
 const router = express.Router()
+const cors = require("cors")
+
 const {
     signUp,
     signIn,
@@ -10,6 +12,7 @@ const {
     resetPassword,
 
 } = require('../controllers/userController')
+
 const { changePassword } = require('../controllers/changePassword')
 const {getUser} = require('../controllers/getUser')
 const {getContract} = require('../controllers/getContract')
@@ -23,8 +26,7 @@ const { getDevis } = require('../controllers/getDevis');
 const { getComparatif } = require('../controllers/getComparatif');
 const { getDevisNumbers } = require('../controllers/getDevisNumbers');
 const { getComparatifNumber } = require('../controllers/getComparatifNumber');
-
-
+const {sendPayment} = require('../controllers/sendPayment')
 
 router.post('/signup', signUp)
 router.post('/signin', signIn)
@@ -45,6 +47,9 @@ router.get('/comparatifnumber/:id', getComparatifNumber)
 router.put('/updateUser/:id', updateUser)
 router.post('/sendContact', sendContact)
 router.post('/sendReclamation', sendReclamation)
+
+
+router.post("/payment", cors(), sendPayment)
 
 // HANDLING FILE UPLOAD
 
