@@ -43,7 +43,7 @@ const Login = ({loginUser}) => {
                     }}
                     validationSchema={
                         Yup.object({
-                            email: Yup.string().email("Invalid email adress").required("Required"),
+                            email: Yup.string().email("adresse email invalide").required("Required"),
                             password: Yup.string().min(8, "Password is too short").max(30, "Password is too long").required("Required")
                         })
                     }
@@ -57,7 +57,7 @@ const Login = ({loginUser}) => {
                             <TextInput
                                 name="email"
                                 type="text"
-                                label ="Email Adress"
+                                label ="Adresse Email"
                                 placeholder="example@brokins.fr"
                                 icon={<FiMail />}
                             />
@@ -65,21 +65,21 @@ const Login = ({loginUser}) => {
                             <TextInput
                                 name="password"
                                 type="password"
-                                label="Password"
+                                label="Mot de passe"
                                 placeholder="********"
                                 icon={<FiLock />}
                             />
 
                             <ButtonGroup>
                                 <StyledFormButton type="submit">
-                                Login
+                                Se connecter
                                 </StyledFormButton>
                             </ButtonGroup>
                         </Form>
                     )}
                 </Formik>
-                <ExtraText>Forgotten password ? <TextLink to ="/forgottenpassword">Reset Password</TextLink></ExtraText>
-                <ExtraText>New Here ? <TextLink to ="/signup">Signup</TextLink></ExtraText>
+                <ExtraText>Mot de passe oubliée ? <TextLink to ="/forgottenpassword">Récupperer mot de passe</TextLink></ExtraText>
+                <ExtraText>S'enregistrer ? <TextLink to ="/signup">Signup</TextLink></ExtraText>
             </StyledFormArea>
         </div>
     )

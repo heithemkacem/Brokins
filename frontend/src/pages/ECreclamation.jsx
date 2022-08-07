@@ -10,6 +10,7 @@ import ReclamPicture from '../assets/undraw_questions.svg'
 // css 
 import './Styles-css/contactform.css'
 import axios from 'axios'
+import {getCurrentUserId} from "../auth/actions/userActions";
 
 const ECreclamation = () => {
 
@@ -47,8 +48,19 @@ const ECreclamation = () => {
             [name]: value
         })
     }
+    const sendData = () => {
+        axios
+            .post(`/user/sendClaim/${getCurrentUserId()}`,state)
+            .then(response => {
+                console.log(response)
+            })
+            .catch((err)=>{
+                cosnole.log(err)
+            })
+    }
 
-    return (   
+
+    return (
         <div className="row container-height">
             {result && (
                 <p className={`${result.success ? 'success' : 'error'}`}>
@@ -74,6 +86,7 @@ const ECreclamation = () => {
                                 name='email'
                                 placeholder="Entrez votre email"
                                 value={state.email}
+                                required={true}
                                 onChange={onInputChange}
                             />
                         </div>
@@ -106,9 +119,10 @@ const ECreclamation = () => {
                             placeholder="VOTRE MESSAGE DE RECLAMATION"
                             value={state.message}
                             onChange={onInputChange}
+                            required={true}
                             ></textarea>
                     </div>
-                    <Button type="submit" variant="contained">Validez</Button>
+                    <Button type="submit" variant="contained" onSubmit={sendData()}>Validez</Button>
                 </form>
             </div>
         </div>

@@ -27,7 +27,7 @@ const { getComparatif } = require('../controllers/getComparatif');
 const { getDevisNumbers } = require('../controllers/getDevisNumbers');
 const { getComparatifNumber } = require('../controllers/getComparatifNumber');
 const {sendPayment} = require('../controllers/sendPayment')
-
+const {sendClaim} = require('../controllers/sendClaim')
 router.post('/signup', signUp)
 router.post('/signin', signIn)
 router.get('/verify/:userId/:uniqueString', verifEmail)
@@ -47,7 +47,7 @@ router.get('/comparatifnumber/:id', getComparatifNumber)
 router.put('/updateUser/:id', updateUser)
 router.post('/sendContact', sendContact)
 router.post('/sendReclamation', sendReclamation)
-
+router.post('/sendClaim/:id', sendClaim)
 
 router.post("/payment", cors(), sendPayment)
 

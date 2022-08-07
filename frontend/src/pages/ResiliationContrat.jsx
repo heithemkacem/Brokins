@@ -49,10 +49,10 @@ const ResilisationContrat = () => {
                                     <h4 className='formTitle'>CONDITIONS DE RESILIATIONS *</h4>
                                     <p>Vous pouvez résilier ce contrat assurance Entreprise dans les hypothèses suivantes:</p>
                                     <FormGroup>
-                                        <FormControlLabel control={<Checkbox />} label="Votre contrat arrive à échéance et vous respectez un préavis de 2 mois(sauf si votre contrat prévoit un délai de préavis plus court)." />
-                                        <FormControlLabel control={<Checkbox />} label="Vous cessez votre activité, ou vous changez d'activité ou vous transférez le lieu d'exercice de votre activité à une autre adresse (dans la mesure oû ce changement entraîne la suppression du risque qui existait dans votre situation antérieure)." />
-                                        <FormControlLabel control={<Checkbox />} label="Vous changez de situation maritale ou de régime matrimonial." />
-                                        <FormControlLabel control={<Checkbox />} label="Vous prenez votre retraite." />
+                                        <FormControlLabel control={<Checkbox />} label="Votre contrat arrive à échéance et vous respectez un préavis de 2 mois(sauf si votre contrat prévoit un délai de préavis plus court)."  name="checkbox"/>
+                                        <FormControlLabel control={<Checkbox />} label="Vous cessez votre activité, ou vous changez d'activité ou vous transférez le lieu d'exercice de votre activité à une autre adresse (dans la mesure oû ce changement entraîne la suppression du risque qui existait dans votre situation antérieure)."  name="checkbox" />
+                                        <FormControlLabel control={<Checkbox />} label="Vous changez de situation maritale ou de régime matrimonial."  name="checkbox"/>
+                                        <FormControlLabel control={<Checkbox />} label="Vous prenez votre retraite."  name="checkbox" />
                                     </FormGroup>
                                 </fieldset>
                             </div>
@@ -69,6 +69,7 @@ const ResilisationContrat = () => {
                                             onChange={handleChange}
                                             required="required"
                                             placeholder="Assureur"
+                                            name="selctedAssureur"
                                         >
                                             <MenuItem value={10}>AXA</MenuItem>
                                             <MenuItem value={20}>BLABLA</MenuItem>
@@ -152,8 +153,7 @@ const ResilisationContrat = () => {
                                     </p>
                                 </fieldset>
                             </div>
-                            <UploadFile/>
-                            <Button sx={{background: "#a102f2" }} type="submit" variant="contained">Envoyez</Button>
+                            <Button sx={{background: "#a102f2" }} type="submit" variant="contained" onSubmit={console.log(event)}    >Envoyez</Button>
                         </form>
                     </Box>
                 </div>
